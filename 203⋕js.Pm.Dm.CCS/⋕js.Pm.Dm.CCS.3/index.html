@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.CCS.3</title>
+    <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Eligendi non obcaecati voluptatum impedit magni repellat in 
+            similique, earum, fugit debitis eaque nulla voluptate, architecto 
+            accusantium velit suscipit exercitationem. Quaerat, labore.</p>
+
+        <button id="crossOut">push to cross out</button>
+        <button id="makeB" >push to make bold</button>
+        <button id="paintR" >push to paint red</button>
+
+      
+	<script>
+        let p1 = document.querySelector('p');
+        let btnCrossOut = document.querySelector('#crossOut');
+        let btnMakeB = document.querySelector('#makeB');
+        let btnPaintR = document.querySelector('#paintR');
+
+        btnCrossOut.addEventListener('click', function(){p1.classList.toggle('makeCrossOut')});
+        btnMakeB.addEventListener('click', function (){p1.classList.toggle('makeBold')});
+        btnPaintR.addEventListener('click', function(){p1.classList.toggle('painted')});
+	</script>
+    
+	</body>
+</html>

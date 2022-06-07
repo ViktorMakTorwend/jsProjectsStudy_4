@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.IES.1</title>
+	</head>
+	<body>
+
+        <div id="parent">
+            <p class="www">text</p>
+            <p class="www">text</p>
+            <p class="www">text</p>
+            <p class="ggg">text</p>
+            <p class="ggg">text</p>
+            <p class="ggg">text</p>
+        </div>
+
+	<script>
+
+        let parent = document.querySelector('#parent');
+        let elems1 = parent.querySelectorAll('.www');
+        let elems2 = parent.querySelectorAll('.ggg');
+
+        for(let el of elems1){
+            el.innerHTML += '!';
+        }
+        for(let el of elems2){
+            el.innerHTML += '?';
+        }
+           
+	</script>
+    
+	</body>
+</html>

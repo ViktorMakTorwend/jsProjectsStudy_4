@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.ASS.3</title>
+	</head>
+	<body>
+        
+        <ul>
+            <li>text1</li>
+            <li>text2</li>
+            <li>text3</li>
+            <li>text4</li>
+            <li>text5</li>
+            
+        </ul>
+
+        <button>push to change style</button>
+
+      
+	<script>
+
+        let lis = document.querySelectorAll('li');
+        let btn = document.querySelector('button');
+        let ul = document.querySelector('ul');
+
+        btn.addEventListener('click', function (){ 
+            for (let li of lis){
+                li.style.cssFloat = 'left';
+                li.style.width = '50px';
+                li.style.border = '1px solid black';
+            }   
+        });
+
+        
+	</script>
+    
+	</body>
+</html>

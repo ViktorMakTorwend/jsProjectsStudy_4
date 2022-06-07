@@ -1,0 +1,11 @@
+.painted {
+    color:red;
+}
+
+.makeBold {
+    font-weight: bold;
+}
+
+.makeCrossOut {
+    text-decoration: line-through;
+}

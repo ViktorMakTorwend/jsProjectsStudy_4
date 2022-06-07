@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.PRS.11</title>
+	</head>
+	<body>
+
+        <ul>
+            <li>text1</li>
+            <li>text2</li>
+            <li id="elem">text3</li>
+            <li>text4</li>
+            <li>text5</li>
+        </ul>
+
+	<script>
+
+        let elem = document.querySelector('#elem');
+        let tempText = elem.previousElementSibling.innerHTML;
+        elem.previousElementSibling.innerHTML = elem.nextElementSibling.innerHTML;
+        elem.nextElementSibling.innerHTML = tempText;
+        
+	</script>
+    
+	</body>
+</html>
