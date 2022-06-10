@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Fm.FB.1</title>
+    
+	</head>
+	<body>
+        
+        <input type="text" id="firstInp">
+        <input type="text" id="secondInp" >
+        
+	<script>
+        
+        let firstInp = document.querySelector('#firstInp');
+        let secondInp = document.querySelector('#secondInp');
+
+        firstInp.addEventListener('input', function(){
+            if(firstInp.value.length >= 2){secondInp.focus()}
+        });
+        secondInp.addEventListener('input', function(){
+            if(secondInp.value.length >= 2){secondInp.blur()}
+        })
+
+	</script>
+    
+	</body>
+</html>

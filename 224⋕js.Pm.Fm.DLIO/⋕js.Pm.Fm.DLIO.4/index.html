@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Fm.DLIO.4</title>
+    
+	</head>
+	<body>
+        
+        <select id="select">
+            <option value="1">понедельник</option>
+            <option value="2">вторник</option>
+            <option value="3">среда</option>
+            <option value="4">четверг</option>
+            <option value="5">пятница</option>
+            <option value="6">суббота</option>
+            <option value="7">воскресенье</option>
+        </select>
+
+        <button>push</button>
+  
+	<script>
+      
+        let btn = document.querySelector('button');
+        let sel = document.querySelector('#select');
+   
+        btn.addEventListener('click', function(){
+            sel[sel.selectedIndex].text += '!';
+        })
+	</script>
+    
+	</body>
+</html>

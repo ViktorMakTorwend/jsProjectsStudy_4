@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Fm.Chb.2</title>
+    
+	</head>
+	<body>
+        
+        <input type="checkbox" name="" id="chbox" >
+        <button id="btn">push</button>
+         <p></p>
+        
+
+	<script>
+        
+        let chBox = document.querySelector('#chbox');
+        let btn = document.querySelector('#btn');
+        let p = document.querySelector('p');
+       
+
+        btn.addEventListener('click', function (){
+            if(chBox.checked){p.innerHTML = 'Hello'}
+            else {p.innerHTML = 'Bye'}
+        });
+
+        
+      
+       
+	</script>
+    
+	</body>
+</html>

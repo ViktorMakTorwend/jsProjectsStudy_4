@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Fm.Chb.1</title>
+    
+	</head>
+	<body>
+        
+        <input type="checkbox" name="" id="chbox" >
+        <button id="btnCheck">check</button>
+        <button id="btnUnCheck"> uncheck</button>
+        
+
+	<script>
+        
+        let chBox = document.querySelector('#chbox');
+        let btnCheck = document.querySelector('#btnCheck');
+        let btnUnCheck = document.querySelector('#btnUnCheck')
+       
+
+        btnCheck.addEventListener('click', function (){
+            chBox.checked = true;
+        });
+
+        btnUnCheck.addEventListener('click', function (){
+            chBox.checked = false;
+        });
+      
+       
+	</script>
+    
+	</body>
+</html>

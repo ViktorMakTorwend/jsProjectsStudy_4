@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Fm.DL.1</title>
+    
+	</head>
+	<body>
+        
+        <select id="select">
+            <option>1</option>
+            <option>2</option>
+            <option selected>3</option>
+        </select>
+    
+        <button>push</button>
+        <p>here is the selected</p>
+        
+	<script>
+        let sel = document.querySelector('#select');
+        let p = document.querySelector('p');
+        let btn = document.querySelector('button');
+
+        btn.addEventListener('click', function(){p.innerHTML = sel.value})
+
+	</script>
+    
+	</body>
+</html>

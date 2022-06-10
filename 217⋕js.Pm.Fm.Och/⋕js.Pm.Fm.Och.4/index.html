@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Fm.Och.4</title>
+    <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+        
+        <input type="text">
+        
+	<script>
+        
+        let inp = document.querySelector('input');
+
+        inp.addEventListener('change', function (){
+            if(inp.value.length <= 5){inp.classList.add('paintedGreen')}
+            else if(inp.value.length > 5){inp.classList.add('paintedRed')}
+        });
+
+	</script>
+    
+	</body>
+</html>

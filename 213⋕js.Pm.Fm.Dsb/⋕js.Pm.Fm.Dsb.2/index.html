@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Fm.Dsb.2</title>
+    
+	</head>
+	<body>
+        
+        <input type="text">
+        <button id="btnBlock">push to block</button>
+        <button id="btnUnBlock" >push to unblock</button>
+
+	<script>
+        
+        let inp = document.querySelector('input');
+        let btnBlock = document.querySelector('#btnBlock');
+        let btnUnBlock = document.querySelector('#btnUnBlock');
+
+        btnBlock.addEventListener('click', function (){inp.disabled = true});
+        btnUnBlock.addEventListener('click', function (){inp.disabled = false});
+       
+	</script>
+    
+	</body>
+</html>

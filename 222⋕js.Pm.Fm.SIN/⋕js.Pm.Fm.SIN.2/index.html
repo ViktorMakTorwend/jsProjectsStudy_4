@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Fm.SIN.2</title>
+    
+	</head>
+	<body>
+        
+        <select id="select">
+            <option>понедельник</option>
+            <option>вторник</option>
+            <option>среда</option>
+            <option>четверг</option>
+            <option>пятница</option>
+            <option>суббота</option>
+            <option>воскресенье</option>
+        </select>
+  
+	<script>
+        let sel = document.querySelector('#select');
+        let day = new Date();
+        sel.selectedIndex = day.getDay()-1;
+
+	</script>
+    
+	</body>
+</html>

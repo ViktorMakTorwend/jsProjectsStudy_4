@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.OE.EE.1</title>
+    <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+        
+        <ul id="elem">
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+            <li>text</li>
+        </ul>
+  
+	<script>
+
+        let ul = document.querySelector('#elem');
+
+        ul.addEventListener('click', func);
+
+        function func(event){
+            if (event.target.tagName == 'UL'){
+                let liElem = document.createElement('li');
+                liElem.textContent = 'new text';
+                ul.appendChild(liElem);
+            } 
+            if(event.target.tagName == 'LI'){
+                event.target.innerHTML += '!';
+            }
+        }
+    
+        
+	</script>
+    
+	</body>
+</html>

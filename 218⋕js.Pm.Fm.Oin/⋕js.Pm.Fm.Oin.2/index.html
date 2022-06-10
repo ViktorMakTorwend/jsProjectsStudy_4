@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Fm.Oin.2</title>
+    
+	</head>
+	<body>
+        
+        <input type="text">
+        <p></p>
+        
+	<script>
+        
+        let inp = document.querySelector('input');
+        let p = document.querySelector('p');
+        let numSymb = 1;
+
+        inp.addEventListener('input', countSymb);
+
+        function countSymb (){
+            if(numSymb <= 5){p.innerHTML = numSymb++}
+            else{p.innerHTML = (numSymb++) - 5}
+        }
+
+	</script>
+    
+	</body>
+</html>

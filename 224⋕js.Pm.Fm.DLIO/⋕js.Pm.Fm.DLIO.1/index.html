@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Fm.DLIO.1</title>
+    
+	</head>
+	<body>
+        
+        <select id="select">
+            <option value="1" >понедельник</option>
+            <option value="2">вторник</option>
+            <option value="3">среда</option>
+            <option value="4" selected>четверг</option>
+            <option value="5">пятница</option>
+            <option value="6">суббота</option>
+            <option value="7">воскресенье</option>
+        </select>
+  
+	<script>
+       
+        let selOptions = document.querySelector('#select');
+   
+        for(let optionElem of selOptions){
+            if(optionElem.selected){optionElem.text += '!'}
+            else {optionElem.text += '?'}     
+        }
+	</script>
+    
+	</body>
+</html>

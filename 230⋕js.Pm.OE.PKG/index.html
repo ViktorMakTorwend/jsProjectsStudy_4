@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.OE.PKG.1</title>
+	</head>
+	<body>
+        
+        <p>text</p>
+        <input type="text">
+  
+	<script>
+    
+        let p = document.querySelector('p');
+        let inp = document.querySelector('input');
+        
+        inp.addEventListener('keydown', function(event){
+
+            if (event.code == 'Enter'){
+                p.textContent = inp.value;
+                inp.value = '';
+            }
+        });
+
+	</script>
+    
+	</body>
+</html>
