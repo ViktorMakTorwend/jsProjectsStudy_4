@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.Mst.4</title>
+	</head>
+	<body>
+
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+
+        <button>click</button>
+
+	<script>
+
+        let button = document.querySelector('button');
+        let elems  = document.querySelectorAll('p');
+
+        button.addEventListener('click', func)
+        
+        function func()
+        {
+            let sum = 0;
+            
+            for (let elem of elems) {
+                sum += Number(elem.textContent);
+            }
+            
+            console.log(sum);
+        }
+        
+	</script>
+    
+	</body>
+</html>

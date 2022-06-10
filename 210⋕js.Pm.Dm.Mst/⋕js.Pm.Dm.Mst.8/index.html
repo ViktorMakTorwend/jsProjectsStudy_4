@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.Mst.8</title>
+	</head>
+	<body>
+
+        <input>
+        <input>
+        <input>
+        
+        <button>click</button>
+
+	<script>
+
+        let button = document.querySelector('button');
+        let elems  = document.querySelectorAll('input');
+        
+        button.addEventListener('click', function() {
+            let sum = 0;
+            for (let elem of elems) {
+            sum += +elem.value;
+        }
+            console.log(sum);
+        });
+        
+	</script>
+    
+	</body>
+</html>

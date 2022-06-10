@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.Pm.23</title>
+    
+	</head>
+	<body>
+        
+        <input type="text" placeholder="Input the num">
+        <button>Get factorial of num</button>
+        <p>Factorial of num</p>
+    
+	<script>
+       
+        let inp = document.querySelector('input');
+        let btn = document.querySelector('button');
+        let p = document.querySelector('p')
+
+        btn.addEventListener('click', getFactorialNum);
+
+        function getFactorialNum (){
+            let factorial = 1;
+            let numOfFact = inp.value;
+            for(let i = 1; i <= numOfFact; i++){
+                factorial *= i;  
+            }
+            p.textContent = factorial;
+        }
+
+	</script>
+    
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.Pm.16</title>
+   
+	</head>
+	<body>
+        
+        <input type="text">
+        <button id="btnPos" >push +1</button>
+        <button id="btnNeg" >push -1</button>
+    
+	<script>
+        
+        let inp = document.querySelector('input');
+        let btnPos = document.querySelector('#btnPos');
+        let btnNeg = document.querySelector('#btnNeg');
+        
+        btnPos.addEventListener('click', increaseNum);
+        btnNeg.addEventListener('click', dicreaseNum)
+
+        function increaseNum () {
+            inp.value ++;
+        }
+
+        function dicreaseNum (){
+            if(inp.value > 0){inp.value--;}   
+        }
+	</script>
+    
+	</body>
+</html>

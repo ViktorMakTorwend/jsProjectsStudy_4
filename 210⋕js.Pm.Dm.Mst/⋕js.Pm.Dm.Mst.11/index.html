@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.Mst.11</title>
+	</head>
+	<body>
+
+        <input data-text="text1">
+        <input data-text="text2">
+        <input data-text="text3">
+
+        <button id="btn">click</button>
+
+	<script>
+
+        let inputs = document.querySelectorAll('input')
+        let button = document.querySelector('#btn')
+
+        button.addEventListener('click',function() {
+            for (let input of inputs) {
+                if (input.value === input.dataset.text) {
+                    //input.classList.add('right');
+                    console.log('right')
+                } 
+                else {
+                    //input.classList.add('wrong');
+                    console.log('wrong');
+                }
+            }
+        });
+        
+	</script>
+    
+	</body>
+</html>

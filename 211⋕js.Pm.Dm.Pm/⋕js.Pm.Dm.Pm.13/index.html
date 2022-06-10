@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.Pm.13</title>
+   
+	</head>
+	<body>
+        
+        <a href="https://www.youtube.com">youtube</a>
+        <a href="http://www.yandex.ru">yandex</a>
+        <a href="https://code.mu/ru/javascript/book/prime/dom/basis/practicum/">code me</a>
+    
+	<script>
+
+        let as = document.querySelectorAll('a');
+
+        for( let aElem of as){
+           if(aElem.href.startsWith('http://')) {aElem.innerHTML += "&#8594"}
+        }
+	</script>
+    
+	</body>
+</html>

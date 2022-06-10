@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕⋕js.Pm.Dm.Nds.8</title>
+	</head>
+	<body>
+
+        <div id="elem">txt<b>tag</b><!--com-->txt<b>tag</b><!--com--></div>
+        
+	<script>
+
+        let elem = document.querySelector('#elem');
+        for (let node of elem.childNodes){
+            if(node.nodeType == 3 || node.nodeType == 8) {console.log(node.data)}
+        }
+
+	</script>
+    
+	</body>
+</html>

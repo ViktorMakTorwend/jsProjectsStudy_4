@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.Pm.5</title>
+   
+	</head>
+	<body>
+        
+        <div id="parent">
+            <input type="text" placeholder="ФИО">
+            <input type="text" class="fio" placeholder="фамилия">
+            <input type="text" class="fio" placeholder="имя">
+            <input type="text" class="fio" placeholder="отчество">
+        </div>
+        
+
+	<script>
+        
+        let divElem = document.querySelector('#parent');
+        let fioInps = document.querySelectorAll('.fio');
+
+        divElem.firstElementChild.addEventListener('blur', getFIO)
+            
+        function getFIO (){
+            let strArr = divElem.firstElementChild.value.split(' ');
+            for (let fioElem of fioInps){
+                fioElem.value = strArr.shift();
+            }
+        }
+        
+	</script>
+    
+	</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.Pm.9</title>
+   
+	</head>
+	<body>
+        
+        <input type="text">
+    
+	<script>
+        
+        let inp = document.querySelector('input');
+
+        inp.addEventListener('blur', testWord);
+
+        function testWord (){
+            let word = inp.value.split('');
+            let wordBack = inp.value.split('').reverse();
+            for (let i = 0; i < word.length; i++) {
+                if (word[i] !== wordBack[i]) { 
+                    return alert('No. This word is not "перевертыш"');    
+                } 
+            }
+            alert('Yes. This word is "перевертыш"');   
+        }
+
+	</script>
+    
+	</body>
+</html>

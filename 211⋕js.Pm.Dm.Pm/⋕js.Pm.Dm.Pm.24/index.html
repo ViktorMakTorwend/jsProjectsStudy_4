@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.Pm.24</title>
+    
+	</head>
+	<body>
+        
+        <input type="text"  id="inpA" placeholder="Input the a">
+        <input type="text"  id="inpB" placeholder="Input the b">
+        <input type="text"  id="inpC" placeholder="Input the c">
+        <button>Find roots of the quadratic equation</button>
+        <p>roots of the quadratic equation</p>
+    
+	<script>
+       
+        let inpA = document.querySelector('#inpA');
+        let inpB = document.querySelector('#inpB');
+        let inpC = document.querySelector('#inpC');
+        let btn = document.querySelector('button');
+        let p = document.querySelector('p')
+
+        btn.addEventListener('click', getRootsQE);
+
+        function getRootsQE (){
+            let x1 = 0;
+            let x2 = 0;
+            let discriminant = (inpB.value * inpB.value) - 4 * inpA.value * inpC.value;
+        
+            if (discriminant > 0){
+                x1 = (- inpB.value + Math.sqrt(discriminant)) / (2 * inpA.value);
+                x2 = (- inpB.value - Math.sqrt(discriminant)) / (2 * inpA.value);
+            }
+            if (discriminant = 0) {
+                x1 = (- inpB.value) / (2 * inpA.value);
+            }
+            if( discriminant < 0){
+                alert ('No roots')
+            }
+            p.textContent = 'x1 = ' +  x1 + ', ' + 'x2 = ' + x2;
+        }
+
+	</script>
+    
+	</body>
+</html>

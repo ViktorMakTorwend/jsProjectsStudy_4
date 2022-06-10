@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.Mst.12</title>
+    <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+
+        <input>
+        <input>
+        <input>
+
+        <button id="btn">click</button>
+	<script>
+
+        let inputs = document.querySelectorAll('input')
+        let button = document.querySelector('#btn')
+
+        let texts = [
+            'text1',
+            'text2',
+            'text3',
+        ];
+
+        //
+        button.addEventListener('click',function func() {
+            for (let i = 0; i < inputs.length; i++) {
+                    if (inputs[i].value === texts[i]) {
+                        inputs[i].classList.toggle('right');
+                        button.removeEventListener('click', func);
+                    } else {
+                        inputs[i].classList.toggle('wrong');
+                        button.removeEventListener('click', func);
+                    }
+            }
+        });
+        
+	</script>
+    
+	</body>
+</html>

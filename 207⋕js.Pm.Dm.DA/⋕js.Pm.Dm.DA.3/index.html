@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.DA.3</title>
+	</head>
+	<body>
+
+        <button data-num = "0">push</button>
+
+	<script>
+
+        let btn = document.querySelector('button');
+
+        btn.addEventListener('click', numOfClics);
+        btn.addEventListener('dblclick', printNumOfClics);
+
+        function numOfClics (){
+            btn.dataset.num++;
+        }
+
+        function printNumOfClics (){
+            alert('There were ' + (btn.dataset.num - 2) +  ' clics done')
+        }
+           
+	</script>
+    
+	</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.Pm.11</title>
+   
+	</head>
+	<body>
+        
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+        <button>push</button>
+    
+	<script>
+        
+        let ps = document.querySelectorAll('p');
+        let btn = document.querySelector('button');
+
+        btn.addEventListener('click', setOrderedNum);
+
+        function setOrderedNum (){
+            let i = 1;
+            for(let pElem of ps){
+                pElem.innerHTML += i++;
+            }
+        }
+
+	</script>
+    
+	</body>
+</html>

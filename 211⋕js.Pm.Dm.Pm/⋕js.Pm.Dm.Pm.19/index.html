@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.Pm.19</title>
+    <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+        
+        <input type="text">
+    
+	<script>
+
+        let inp = document.querySelector('input');
+
+        inp.addEventListener('blur', testNum);
+
+        function testNum (){
+            if(inp.value > 1 && inp.value < 100){
+                inp.classList.remove('paintRed')
+                inp.classList.add('paintGreen')
+            }
+            else {
+                inp.classList.remove('paintGreen')
+                inp.classList.toggle('paintRed')}
+        }
+        
+	</script>
+    
+	</body>
+</html>

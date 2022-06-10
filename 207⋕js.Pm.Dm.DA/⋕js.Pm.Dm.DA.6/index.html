@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.DA.6</title>
+	</head>
+	<body>
+
+        <div id="elem" data-product-price="1000" data-product-amount="5">
+            товар яблоки
+        </div>
+
+	<script>
+
+        let divTeg = document.querySelector('#elem');
+
+        divTeg.addEventListener('click', getSum);
+        
+        function getSum (){
+            divTeg.innerHTML += divTeg.dataset.productPrice * divTeg.dataset.productAmount;
+            divTeg.removeEventListener('click', getSum);
+        }
+           
+	</script>
+    
+	</body>
+</html>

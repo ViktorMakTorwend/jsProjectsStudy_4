@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.Mst.6</title>
+	</head>
+	<body>
+
+        <p>text1</p>
+        <p>text2</p>
+        <p>text3</p>
+        <button>click</button>
+
+	<script>
+
+        let button = document.querySelector('button');
+        let elems  = document.querySelectorAll('p');
+
+        button.addEventListener('click', function() {
+            for (let elem of elems) {
+                elem.innerHTML = '<b>' + elem.innerHTML + '</b>';
+            }
+        });
+        
+	</script>
+    
+	</body>
+</html>

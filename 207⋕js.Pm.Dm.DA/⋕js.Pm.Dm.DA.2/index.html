@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.DA.2</title>
+	</head>
+	<body>
+
+        <div data-num="1">text</div>
+        <div data-num="2">text</div>
+        <div data-num="3">text</div>
+        <div data-num="4">text</div>
+        <div data-num="5">text</div>
+
+	<script>
+
+        let divs = document.querySelectorAll('div');
+
+        for(let divEl of divs){
+            divEl.addEventListener('click', func);
+        }
+
+        function func (){
+            this.innerHTML += this.dataset.num;
+            this.removeEventListener('click', func);
+        }
+           
+	</script>
+    
+	</body>
+</html>

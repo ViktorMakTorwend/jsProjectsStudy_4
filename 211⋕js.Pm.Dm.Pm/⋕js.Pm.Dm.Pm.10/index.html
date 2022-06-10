@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.Pm.10</title>
+   
+	</head>
+	<body>
+        
+        <input type="text">
+    
+	<script>
+        let inp = document.querySelector('input');
+        inp.addEventListener('blur', testNumber);
+
+        function testNumber (){
+            let numArr = inp.value.split('');
+            
+            if(numArr.includes('3')) {alert('Yes')}
+            else {alert('No')}     
+        }
+
+	</script>
+    
+	</body>
+</html>

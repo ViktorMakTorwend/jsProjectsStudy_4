@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.Pm.7</title>
+   
+	</head>
+	<body>
+        
+        <input type="text">
+    
+	<script>
+        let inp = document.querySelector('input');
+
+        inp.addEventListener('blur', getSumWords);
+
+        function getSumWords (){
+            let sum = inp.value.split(' ');
+            console.log(sum.length);              
+        }
+
+	</script>
+    
+	</body>
+</html>

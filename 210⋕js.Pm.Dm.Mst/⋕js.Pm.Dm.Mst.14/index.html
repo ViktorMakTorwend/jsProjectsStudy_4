@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.Mst.14</title>
+   
+	</head>
+	<body>
+
+        <input id="inp1">
+        <input id="inp2">
+        <input id="inp3">
+
+        <button id="btn">click</button>
+
+	<script>
+
+        let btn  = document.querySelector('#btn');
+        let inp1 = document.querySelector('#inp1');
+        let inp2 = document.querySelector('#inp2');
+        let inp3 = document.querySelector('#inp3');
+
+        btn.addEventListener('click', function() {
+            inp3.value = +inp1.value + (+inp2.value);
+        });
+        
+	</script>
+    
+	</body>
+</html>

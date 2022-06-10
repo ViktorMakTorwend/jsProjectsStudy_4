@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.Pm.14</title>
+   
+	</head>
+	<body>
+        
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+    
+	<script>
+        let ps = document.querySelectorAll('p');
+
+        for(let pElem of ps){
+            pElem.addEventListener('click', getSqNum)
+        }
+
+        function getSqNum (){
+            this.innerHTML = Math.pow(this.innerHTML, 2);
+        }
+	</script>
+    
+	</body>
+</html>

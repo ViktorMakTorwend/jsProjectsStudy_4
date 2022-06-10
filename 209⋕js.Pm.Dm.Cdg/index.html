@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.Cdg.1</title>
+	</head>
+	<body>
+
+        <ul>
+            <li>2000</li>
+            <li>2004</li>
+            <li>2021</li>
+            <li>2022</li>
+            <li>2025</li>
+            <li>2031</li>
+        </ul>
+        
+	<script>
+
+        let lis = document.querySelectorAll('li');
+
+        function getSumNums (arrOfEl){
+            let sumOfnums = 0;
+            let res = [];
+            let result = 0;
+
+            for (let liElem of arrOfEl){
+                let str = String(liElem.textContent);
+                for (let i = 0; i < str.length; i++){
+                    sumOfnums += Number(str[i]);
+                }
+                if(sumOfnums == 6){
+                    res.push(liElem.textContent);
+                }
+                sumOfnums = 0;
+            }
+        
+             for(let i= 0; i < res.length; i++){
+                result += Number(res[i]);
+            } 
+
+            console.log(result);
+        }
+
+        getSumNums(lis);
+        
+	</script>
+    
+	</body>
+</html>

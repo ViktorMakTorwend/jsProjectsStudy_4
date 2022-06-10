@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.Pm.17</title>
+   
+	</head>
+	<body>
+        
+        <input type="text">
+        <p id="p1">text1</p>
+        <p id="p2">text2</p>
+    
+	<script>
+    
+        let inp = document.querySelector('input');
+        let p1 = document.querySelector('#p1');
+        let p2 = document.querySelector('#p2');
+        let numClics = 1;
+        
+        p1.addEventListener('click', () => inp.value = numClics++);
+        p2.addEventListener('click', () => inp.value = numClics++);
+        
+	</script>
+    
+	</body>
+</html>

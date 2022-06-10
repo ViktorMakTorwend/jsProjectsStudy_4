@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.Mst.15</title>
+   
+	</head>
+	<body>
+
+        <input id="inp">
+
+	<script>
+
+        let inp = document.querySelector('#inp');
+
+        inp.addEventListener('blur', function() {
+            let digits = inp.value.split('');
+            let sum = 0;
+            
+             for (let digit of digits) {
+                sum += +digit;
+            }
+            
+            console.log(sum); 
+        });
+        
+	</script>
+    
+	</body>
+</html>

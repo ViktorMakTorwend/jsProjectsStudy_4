@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.DA.5</title>
+	</head>
+	<body>
+
+        <input id="elem" data-min="5" data-max="10">
+
+	<script>
+
+        let inp = document.querySelector('#elem');
+
+        inp.addEventListener('blur', controlRange);
+        
+        function controlRange (){
+            if(inp.value.length < inp.dataset.min || inp.value.length > inp.dataset.max){alert('Num is not in range!')}
+        }
+           
+	</script>
+    
+	</body>
+</html>

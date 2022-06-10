@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.DA.4</title>
+	</head>
+	<body>
+
+        <input id="elem" data-length="5">
+
+	<script>
+
+        let inp = document.querySelector('#elem');
+
+        inp.addEventListener('blur', controlNumsSym);
+        
+        function controlNumsSym (){
+            if(inp.value.length != inp.dataset.length){alert('Num of symbols is not equal 5')};
+        }
+           
+	</script>
+    
+	</body>
+</html>

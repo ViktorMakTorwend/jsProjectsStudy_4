@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.Pm.2</title>
+   
+	</head>
+	<body>
+
+        <input type="text">num1
+        <input type="text">num2
+        <input type="text">num3
+        <p> sum = </p>
+        <button>push</button>
+
+	<script>
+        //Дано несколько инпутов, абзац и кнопка. По нажатию на кнопку получите числа, стоящие в этих инпутах и запишите их сумму в абзац.
+        let inps = document.querySelectorAll('input');
+        let p = document.querySelector('p');
+        let btn = document.querySelector('button');
+
+        btn.addEventListener('click', calcNums);
+
+        function calcNums (){
+            let sum = 0;
+            for (let inpElem of inps){
+                sum += +inpElem.value;
+            }
+            p.innerHTML += sum;
+        }
+          
+	</script>
+    
+	</body>
+</html>

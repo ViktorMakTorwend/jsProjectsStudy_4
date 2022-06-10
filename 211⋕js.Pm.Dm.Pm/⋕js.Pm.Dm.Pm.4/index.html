@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.Pm.4</title>
+   
+	</head>
+	<body>
+
+        <input type="text">
+
+	<script>
+        
+        let inp = document.querySelector('input');
+
+        inp.addEventListener('blur', getSumNums);
+
+        function getSumNums (){
+            let sum = 0;
+            let arrDigits = inp.value.split(',');        
+
+            for (let num of arrDigits){
+                sum += +num;
+            }
+            console.log(sum);
+        }   
+
+	</script>
+    
+	</body>
+</html>

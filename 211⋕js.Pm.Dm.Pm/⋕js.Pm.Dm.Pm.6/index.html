@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.Pm.6</title>
+   
+	</head>
+	<body>
+        
+        <input type="text">
+    
+	<script>
+        
+        let inp = document.querySelector('input');
+
+        inp.addEventListener('blur', getLetterUp);
+
+        function getLetterUp (){
+            inp.value = (inp.value.split(' ')).map(function (elem){
+                
+                let symbArr = elem.split('');
+                symbArr.unshift(symbArr.shift().toUpperCase());
+                return symbArr.join(''); 
+
+            }).join(' ');
+        }
+
+	</script>
+    
+	</body>
+</html>

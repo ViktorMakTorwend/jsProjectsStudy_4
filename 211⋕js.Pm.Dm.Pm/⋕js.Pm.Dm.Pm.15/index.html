@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.Pm.15</title>
+   
+	</head>
+	<body>
+        
+        <input type="text">
+    
+	<script>
+        let inp = document.querySelector('input');
+        
+
+        inp.addEventListener('blur', knowDayOfWeek);
+
+        function knowDayOfWeek(){
+            let days = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
+            let datArrStr = inp.value.split('.').reverse();
+            let datArrNum = datArrStr.map(function(elem){return Number(elem)})
+
+            let date = new Date(datArrNum);
+            let day = date.getDay();
+            alert(days[day]);  
+        }
+	</script>
+    
+	</body>
+</html>

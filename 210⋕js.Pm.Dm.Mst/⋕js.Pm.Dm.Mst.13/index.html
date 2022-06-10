@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.Mst.13</title>
+   
+	</head>
+	<body>
+
+        <input>
+        <input>
+        <input>
+        <button id="btn">click</button>
+
+	<script>
+
+        let inputs = document.querySelectorAll('input');
+        let btn = document.querySelector('#btn');
+       
+
+        btn.addEventListener('click', function() {
+            let sum = 0;
+            for (let input of inputs) {
+                sum += Number(input.value);
+            }
+            
+            console.log(sum);
+        });
+        
+	</script>
+    
+	</body>
+</html>

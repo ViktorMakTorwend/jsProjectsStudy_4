@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.Pm.20</title>
+    
+	</head>
+	<body>
+        
+        <input type="text">
+        <button>Generete random num</button>
+    
+	<script>
+    
+        let inp = document.querySelector('input');
+        let btn = document.querySelector('button');
+        let sybStr = 'abcdefghijklmnopqrstuvw123456789!@#$%^&*'
+
+        btn.addEventListener('click', getRandomNum);
+
+        function getRandomNum (){
+            function getRandomInt(min, max) {
+	            return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+
+            for(let i = 0; i < 9; i++){
+                inp.value += sybStr[getRandomInt(0, sybStr.length-1)];
+            }    
+        }
+
+        
+ 
+	</script>
+    
+	</body>
+</html>

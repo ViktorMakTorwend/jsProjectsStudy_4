@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.Pm.22</title>
+    
+	</head>
+	<body>
+        
+        <input type="text" placeholder="Input temp in F">
+        <button>From F in C</button>
+        <p>Here is tem in C</p>
+    
+	<script>
+        
+        let inp = document.querySelector('input');
+        let btn = document.querySelector('button');
+        let p = document.querySelector('p')
+
+        btn.addEventListener('click', convertFromFtoC);
+
+        function convertFromFtoC (){
+            //°C = (°F - 32) × 5/9.
+            p.innerHTML = Math.round((inp.value -32) * 5 / 9) + ' C';
+        }
+
+        
+ 
+	</script>
+    
+	</body>
+</html>

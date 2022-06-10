@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Dm.Nds.6</title>
+	</head>
+	<body>
+
+        <div id="elem">txt<b>tag</b><!--com-->txt<b>tag</b><!--com--></div>
+        
+	<script>
+
+        let elem = document.querySelector('#elem');
+        for (let node of elem.childNodes){
+            if(node.nodeType == 1 || node.nodeType == 3){
+                console.log(node + ' - ' + node.nodeName + ' - ' + node.nodeType);
+            }
+        }
+
+	</script>
+    
+	</body>
+</html>
