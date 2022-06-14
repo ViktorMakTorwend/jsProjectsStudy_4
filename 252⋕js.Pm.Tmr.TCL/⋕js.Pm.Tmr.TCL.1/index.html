@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Tmr.TCL.1</title>
+	</head>
+	<body>
+     
+    <input type="button" id="elem" value="1">
+
+	<script>
+        
+    let elem = document.querySelector('#elem');
+
+    elem.addEventListener('click', function() {
+        // контекст this внешней функции не доступен для внутренней функции setInterval
+        let self = this;  
+        setInterval(function() {
+            self.value = Number(elem.value) + 1;
+        }, 1000);
+    });
+     
+    
+	</script>
+    
+	</body>
+</html>
+

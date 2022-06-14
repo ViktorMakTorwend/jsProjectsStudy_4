@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Ctx.BM.1</title>
+	</head>
+	<body>
+
+        <input id="elem" value="привет">
+     
+	<script>
+
+        "use strict";
+
+        let elem = document.getElementById('elem');
+
+        function func(surname, name) {
+            console.log(this.value + ', ' + surname + ' ' + name);
+        }
+
+        func = func.bind(elem);
+        func ('Ivanov', 'Ivan');
+        func ('Petrov', 'Petr');
+	</script>
+    
+	</body>
+</html>

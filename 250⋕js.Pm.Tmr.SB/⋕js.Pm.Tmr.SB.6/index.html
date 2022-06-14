@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Tmr.SB.6</title>
+	</head>
+	<body>
+     
+    <button id="btnStart" >Push for start timer</button>
+    <button id="btnStop" >Push for stop timer</button>
+
+	<script>
+        
+    let btnStart = document.querySelector('#btnStart');
+    let btnStop = document.querySelector('#btnStop');
+    let timerId;
+
+    btnStart.addEventListener('click', toCount);
+
+    btnStop.addEventListener('click', function() {
+        clearInterval(timerId);
+        btnStart.addEventListener('click', toCount)
+
+    });
+
+    function toCount (){
+        let i = 10;
+        timerId =  setInterval(function() {
+                console.log(i--);
+                if (i <= 0){
+                    clearInterval(timerId);
+                }
+            }, 1000);
+        this.removeEventListener('click', toCount);     
+    }
+       
+	</script>
+    
+	</body>
+</html>
+

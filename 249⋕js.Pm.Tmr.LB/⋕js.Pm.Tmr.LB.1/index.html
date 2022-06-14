@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.Tmr.LB.1</title>
+	</head>
+	<body>
+     
+        <button>Push for timer</button>
+
+	<script>
+        
+        let btn = document.querySelector('button');
+        let i = 100;
+
+        btn.addEventListener('click', function() {
+
+            setInterval(function() {
+                console.log(i--);
+                if (i <= 0){
+                    clearInterval(timerId);
+                }
+            }, 1000);
+        });
+
+        
+        
+	</script>
+    
+	</body>
+</html>
+

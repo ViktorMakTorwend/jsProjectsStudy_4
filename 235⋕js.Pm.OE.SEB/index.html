@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.OE.SEB.1</title>
+    <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+
+        <div id="parent">
+            <button>click me</button>
+            <div id="block">
+                text
+            </div>
+        </div>
+     
+	<script>
+
+        let parent = document.querySelector('#parent');
+        let button = document.querySelector('button');
+        let block  = document.querySelector('#block');
+
+        button.addEventListener('click', function(event) {
+            block.classList.add('active');
+            event.stopImmediatePropagation(); 
+        });
+
+        parent.addEventListener('click', function() {
+            block.classList.remove('active');
+        });
+
+
+	</script>
+    
+	</body>
+</html>

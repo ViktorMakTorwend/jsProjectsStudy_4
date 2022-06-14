@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.OE.BTE.1</title>
+    <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+
+        <div>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+     
+	<script>
+
+        let div = document.querySelector('div');
+
+        div.addEventListener('click', getEvent);
+
+        function getEvent (event){
+            if (event.target.tagName === "LI"){
+                alert('Click on li ' + event.target.textContent)
+            }
+            if (event.target.tagName === 'UL'){
+                alert('Click on UL')
+            }
+            if(event.target.tagName === 'DIV'){
+                alert('Click on div')
+            }
+        }
+        
+	</script>
+    
+	</body>
+</html>

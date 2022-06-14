@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+    <title>⋕js.Pm.OE.CDA.2</title>
+	</head>
+	<body>
+
+        <input type="text" id="num1" >
+        <input type="text" id="num2">
+        <p>sum = </p>
+        <a href=""> Push to get a sum of nums</a>
+     
+	<script>
+        
+        let num1 = document.querySelector('#num1');
+        let num2 = document.querySelector('#num2')
+        let p = document.querySelector('p');
+        let a = document.querySelector('a');
+        
+        a.addEventListener('click', function(event){
+            event.preventDefault();
+            p.textContent += + num1.value + (+num2.value);
+        });
+
+	</script>
+    
+	</body>
+</html>
